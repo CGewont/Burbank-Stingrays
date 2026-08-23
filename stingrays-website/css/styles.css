@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+svg {
+    width: 28px;
+    height: 28px;
+    stroke: #d71920;
+}
