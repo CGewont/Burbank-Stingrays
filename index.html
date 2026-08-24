@@ -2,41 +2,80 @@
 <html lang="en">
 
 <head>
+
+    <!-- ==================================================
+         BASIC PAGE INFORMATION
+    ================================================== -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Official website for the Burbank Stingrays Swim Team. View schedules, meets, coaches, team resources, and memories."
+        content="Burbank Stingrays Swim Team website. View practice schedules, meets, coaches, team resources, Safe Sport information, and team memories."
     >
 
     <title>Burbank Stingrays Swim Team</title>
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ==================================================
+         FAVICON
+    ================================================== -->
+
+    <link
+        rel="icon"
+        type="image/jpeg"
+        href="assets/logos/Stingray.jpg"
+    >
+
+
+    <!-- ==================================================
+         MAIN STYLESHEET
+    ================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
 </head>
 
+
 <body>
+
 
     <!-- ==================================================
          HEADER / NAVIGATION
     ================================================== -->
+
     <header class="site-header">
 
-        <nav class="navbar">
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
 
-            <!-- Team Branding -->
-            <a href="index.html" class="navbar-brand">
-                <!--
-                Eventually replace this text with the Stingrays logo:
+            <!-- Team Brand -->
+            <a
+                href="index.html"
+                class="navbar-brand"
+                aria-label="Burbank Stingrays home"
+            >
 
                 <img
-                    src="assets/logos/stingrays-logo.png"
-                    alt="Burbank Stingrays Swim Team"
+                    src="assets/logos/Stingray.jpg"
+                    alt=""
+                    class="navbar-logo"
                 >
-                -->
 
-                <span>Burbank Stingrays</span>
+                <span>
+                    Burbank Stingrays
+                </span>
+
             </a>
 
 
@@ -44,7 +83,11 @@
             <ul class="nav-links">
 
                 <li>
-                    <a href="index.html" class="active">
+                    <a
+                        href="index.html"
+                        class="active"
+                        aria-current="page"
+                    >
                         Home
                     </a>
                 </li>
@@ -91,10 +134,13 @@
             <!-- Mobile Menu Button -->
             <button
                 class="mobile-menu-button"
+                type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
             >
+
                 <i data-lucide="menu"></i>
+
             </button>
 
         </nav>
@@ -102,42 +148,66 @@
     </header>
 
 
-
     <!-- ==================================================
-         MAIN WEBSITE CONTENT
+         MAIN PAGE CONTENT
     ================================================== -->
+
     <main>
 
 
         <!-- ==================================================
              HERO SECTION
         ================================================== -->
+
         <section class="hero">
 
             <div class="hero-content">
 
-                <p class="hero-eyebrow">
-                    Burbank, Illinois
-                </p>
 
-                <h1>
-                    Burbank Stingrays
-                </h1>
+                <!-- Hero Text -->
+                <div class="hero-text">
 
-                <p class="hero-description">
-                    Competitive swimming, teamwork, development,
-                    and community.
-                </p>
+                    <p class="hero-eyebrow">
+                        Burbank, Illinois
+                    </p>
 
-                <div class="hero-buttons">
+                    <h1>
+                        Burbank Stingrays
+                    </h1>
 
-                    <a href="join.html" class="btn btn-primary">
-                        Join the Team
-                    </a>
+                    <p class="hero-description">
+                        Competitive swimming, teamwork,
+                        development, and community.
+                    </p>
 
-                    <a href="schedule.html" class="btn btn-secondary">
-                        View Schedule
-                    </a>
+                    <div class="hero-buttons">
+
+                        <a
+                            href="join.html"
+                            class="btn btn-primary"
+                        >
+                            Join the Team
+                        </a>
+
+                        <a
+                            href="schedule.html"
+                            class="btn btn-secondary"
+                        >
+                            View Schedule
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Main Team Logo -->
+                <div class="hero-logo">
+
+                    <img
+                        src="assets/logos/Updated_BurbankStingraysSwimTeam2.png"
+                        alt="Burbank Stingrays Swim Team logo"
+                    >
 
                 </div>
 
@@ -146,22 +216,27 @@
         </section>
 
 
-
         <!-- ==================================================
              QUICK LINKS
         ================================================== -->
+
         <section class="quick-links-section">
 
             <div class="section-container">
 
                 <div class="section-heading">
 
+                    <p class="section-label">
+                        Get Started
+                    </p>
+
                     <h2>
                         Quick Links
                     </h2>
 
                     <p>
-                        Find the information you need quickly.
+                        Find schedules, upcoming meets,
+                        coaches, and team memories.
                     </p>
 
                 </div>
@@ -169,9 +244,10 @@
 
                 <div class="quick-links-grid">
 
-
-                    <!-- Practice Schedule -->
-                    <a href="schedule.html" class="quick-card">
+                    <a
+                        href="schedule.html"
+                        class="quick-card"
+                    >
 
                         <i data-lucide="clock"></i>
 
@@ -180,14 +256,17 @@
                         </h3>
 
                         <p>
-                            View weekly practice times.
+                            View weekly practice days
+                            and training times.
                         </p>
 
                     </a>
 
 
-                    <!-- Meets -->
-                    <a href="meets.html" class="quick-card">
+                    <a
+                        href="meets.html"
+                        class="quick-card"
+                    >
 
                         <i data-lucide="calendar-days"></i>
 
@@ -196,14 +275,17 @@
                         </h3>
 
                         <p>
-                            View upcoming meets and team events.
+                            View upcoming swim meets,
+                            events, and important dates.
                         </p>
 
                     </a>
 
 
-                    <!-- Coaches -->
-                    <a href="coaches.html" class="quick-card">
+                    <a
+                        href="coaches.html"
+                        class="quick-card"
+                    >
 
                         <i data-lucide="users"></i>
 
@@ -212,14 +294,17 @@
                         </h3>
 
                         <p>
-                            Meet the Stingrays coaching staff.
+                            Meet the Burbank Stingrays
+                            coaching staff.
                         </p>
 
                     </a>
 
 
-                    <!-- Memories -->
-                    <a href="memories.html" class="quick-card">
+                    <a
+                        href="memories.html"
+                        class="quick-card"
+                    >
 
                         <i data-lucide="camera"></i>
 
@@ -228,11 +313,11 @@
                         </h3>
 
                         <p>
-                            Explore photos and Stingrays memories.
+                            Explore Stingrays photos,
+                            events, and team memories.
                         </p>
 
                     </a>
-
 
                 </div>
 
@@ -241,10 +326,10 @@
         </section>
 
 
-
         <!-- ==================================================
              ANNOUNCEMENTS
         ================================================== -->
+
         <section class="announcements-section">
 
             <div class="section-container">
@@ -261,11 +346,15 @@
 
                     </div>
 
+                    <p>
+                        Important team announcements
+                        and upcoming dates.
+                    </p>
+
                 </div>
 
 
                 <div class="announcement-list">
-
 
                     <article class="announcement-card">
 
@@ -280,7 +369,8 @@
                             </h3>
 
                             <p>
-                                Stingrays team tryouts begin August 25.
+                                Burbank Stingrays team tryouts
+                                begin August 25.
                             </p>
 
                         </div>
@@ -301,13 +391,13 @@
                             </h3>
 
                             <p>
-                                Regular season practices begin September 8.
+                                Regular season practices begin
+                                September 8.
                             </p>
 
                         </div>
 
                     </article>
-
 
                 </div>
 
@@ -316,29 +406,33 @@
         </section>
 
 
-
         <!-- ==================================================
-             UPCOMING PRACTICES
+             PRACTICE SCHEDULE PREVIEW
         ================================================== -->
+
         <section class="upcoming-section">
 
             <div class="section-container">
 
                 <div class="section-heading">
 
+                    <p class="section-label">
+                        Weekly Training
+                    </p>
+
                     <h2>
-                        Upcoming Practices
+                        Practice Schedule
                     </h2>
 
                     <p>
-                        A quick look at our regular weekly practice times.
+                        A quick look at the regular
+                        weekly practice schedule.
                     </p>
 
                 </div>
 
 
                 <div class="practice-preview-grid">
-
 
                     <article class="practice-card">
 
@@ -387,13 +481,15 @@
 
                     </article>
 
-
                 </div>
 
 
                 <div class="section-action">
 
-                    <a href="schedule.html" class="text-link">
+                    <a
+                        href="schedule.html"
+                        class="text-link"
+                    >
 
                         View Full Schedule
 
@@ -408,15 +504,16 @@
         </section>
 
 
-
         <!-- ==================================================
-             ABOUT
+             ABOUT THE STINGRAYS
         ================================================== -->
+
         <section class="about-section">
 
             <div class="section-container">
 
                 <div class="about-content">
+
 
                     <div class="about-text">
 
@@ -425,20 +522,24 @@
                         </p>
 
                         <h2>
-                            Welcome to the Burbank Stingrays
+                            Welcome to the
+                            Burbank Stingrays
                         </h2>
 
                         <p>
-                            The Burbank Stingrays are a competitive swim team
-                            focused on helping swimmers develop technique,
-                            confidence, discipline, teamwork, and a lifelong
-                            appreciation for swimming.
+                            The Burbank Stingrays are a
+                            competitive swim team focused on
+                            helping swimmers improve their
+                            technique, confidence, discipline,
+                            teamwork, and competitive swimming
+                            experience.
                         </p>
 
                         <p>
-                            Our team brings together swimmers, families,
-                            coaches, and the community through practices,
-                            competition, team events, and shared experiences.
+                            Our team brings together swimmers,
+                            coaches, families, and the community
+                            through practices, meets, team events,
+                            and shared experiences.
                         </p>
 
                     </div>
@@ -446,16 +547,11 @@
 
                     <div class="about-placeholder">
 
-                        <!--
-                        Future team photo:
-
                         <img
-                            src="assets/images/team/team-photo.jpg"
+                            src="assets/logos/Updated_BurbankStingraysSwimTeam2.png"
                             alt="Burbank Stingrays Swim Team"
+                            class="about-logo"
                         >
-                        -->
-
-                        <i data-lucide="waves"></i>
 
                     </div>
 
@@ -466,10 +562,10 @@
         </section>
 
 
-
         <!-- ==================================================
-             TEAM MEMORIES COLLAGE PREVIEW
+             TEAM MEMORIES
         ================================================== -->
+
         <section class="memories-section">
 
             <div class="section-container">
@@ -485,54 +581,45 @@
                     </h2>
 
                     <p>
-                        Practices, meets, championships, celebrations,
-                        and the moments that make the Stingrays a team.
+                        Practices, meets, championships,
+                        celebrations, and the moments that
+                        make the Stingrays a team.
                     </p>
 
                 </div>
 
 
-                <!--
-                    These are placeholders for now.
-
-                    Later we will replace these with actual photographs
-                    and create the scrapbook / masonry-style collage.
-                -->
-
                 <div class="memory-preview-grid">
-
 
                     <div class="memory-placeholder memory-large">
                         <i data-lucide="camera"></i>
                     </div>
 
+                    <div class="memory-placeholder">
+                        <i data-lucide="image"></i>
+                    </div>
 
                     <div class="memory-placeholder">
                         <i data-lucide="image"></i>
                     </div>
 
-
                     <div class="memory-placeholder">
                         <i data-lucide="image"></i>
                     </div>
-
-
-                    <div class="memory-placeholder">
-                        <i data-lucide="image"></i>
-                    </div>
-
 
                     <div class="memory-placeholder memory-wide">
                         <i data-lucide="camera"></i>
                     </div>
-
 
                 </div>
 
 
                 <div class="section-action">
 
-                    <a href="memories.html" class="btn btn-primary">
+                    <a
+                        href="memories.html"
+                        class="btn btn-primary"
+                    >
 
                         Explore Our Story
 
@@ -547,29 +634,45 @@
         </section>
 
 
-
         <!-- ==================================================
              JOIN THE TEAM
         ================================================== -->
+
         <section class="join-section">
 
             <div class="section-container">
 
                 <div class="join-content">
 
-                    <i data-lucide="waves" class="join-icon"></i>
+                    <i
+                        data-lucide="waves"
+                        class="join-icon"
+                    ></i>
+
+                    <p class="section-label">
+                        Become a Stingray
+                    </p>
 
                     <h2>
-                        Ready to Become a Stingray?
+                        Ready to Join the Team?
                     </h2>
 
                     <p>
-                        Learn about the team, practice expectations,
-                        evaluations, and how to register.
+                        Learn about the Burbank Stingrays,
+                        practice expectations, evaluations,
+                        and how to begin the registration
+                        process.
                     </p>
 
-                    <a href="join.html" class="btn btn-primary">
+                    <a
+                        href="join.html"
+                        class="btn btn-primary"
+                    >
+
                         Join the Team
+
+                        <i data-lucide="arrow-right"></i>
+
                     </a>
 
                 </div>
@@ -582,31 +685,36 @@
     </main>
 
 
-
     <!-- ==================================================
          FOOTER
     ================================================== -->
+
     <footer class="site-footer">
 
         <div class="footer-container">
 
 
-            <!-- Team Information -->
             <div class="footer-brand">
+
+                <img
+                    src="assets/logos/Updated_BurbankStingraysSwimTeam2.png"
+                    alt="Burbank Stingrays Swim Team"
+                    class="footer-logo"
+                >
 
                 <h2>
                     Burbank Stingrays
                 </h2>
 
                 <p>
-                    Competitive swimming, teamwork,
+                    Competitive swimming,
+                    teamwork, development,
                     and community.
                 </p>
 
             </div>
 
 
-            <!-- Quick Links -->
             <div class="footer-column">
 
                 <h3>
@@ -632,7 +740,6 @@
             </div>
 
 
-            <!-- Resources -->
             <div class="footer-column">
 
                 <h3>
@@ -654,25 +761,37 @@
             </div>
 
 
-            <!-- Contact -->
             <div class="footer-column">
 
                 <h3>
-                    Contact
+                    Team Location
                 </h3>
 
                 <p>
+
                     <i data-lucide="map-pin"></i>
+
                     Burbank, Illinois
+
                 </p>
 
-                <a href="mailto:">
-                    <i data-lucide="mail"></i>
-                    Contact the Team
+                <a href="meets.html">
+
+                    <i data-lucide="calendar-days"></i>
+
+                    Meets & Events
+
+                </a>
+
+                <a href="safe-sport.html">
+
+                    <i data-lucide="shield-check"></i>
+
+                    Safe Sport
+
                 </a>
 
             </div>
-
 
         </div>
 
@@ -689,16 +808,18 @@
     </footer>
 
 
-
     <!-- ==================================================
          JAVASCRIPT
     ================================================== -->
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script
+        src="https://unpkg.com/lucide@latest"
+    ></script>
 
-    <!-- Main JavaScript -->
-    <script src="js/main.js"></script>
+    <script
+        src="js/main.js"
+    ></script>
+
 
 </body>
 

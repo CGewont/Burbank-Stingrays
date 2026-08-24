@@ -212,6 +212,12 @@ section {
 
 .navbar-brand {
 
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
     text-decoration: none;
 
     font-size: 1.25rem;
@@ -226,6 +232,16 @@ section {
 
 .navbar-brand:hover {
     color: var(--color-red);
+}
+
+
+.navbar-logo {
+
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: contain;
 }
 
 
@@ -326,11 +342,53 @@ section {
 .hero-content {
 
     width: min(
-        100%,
+        90%,
         var(--max-width)
     );
 
     margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr 0.65fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.hero-text {
+    max-width: 850px;
+}
+
+
+.hero-logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.hero-logo img {
+
+    width: min(
+        100%,
+        400px
+    );
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 12px 20px rgba(0, 0, 0, 0.15)
+        );
 }
 
 
@@ -806,6 +864,19 @@ section {
 }
 
 
+.about-logo {
+
+    width: min(
+        85%,
+        350px
+    );
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
 /* =========================================================
    11. TEAM MEMORIES
    ========================================================= */
@@ -994,6 +1065,18 @@ section {
 }
 
 
+.footer-logo {
+
+    width: 140px;
+
+    height: auto;
+
+    margin-bottom: 18px;
+
+    object-fit: contain;
+}
+
+
 .footer-brand h2,
 .footer-column h3 {
 
@@ -1155,6 +1238,57 @@ svg {
 
         gap:
             10px 18px;
+    }
+
+
+    .hero-content {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+
+    .hero-logo {
+
+        order: -1;
+    }
+
+
+    .hero-logo img {
+
+        width: min(
+            75%,
+            280px
+        );
+
+        margin: 0 auto;
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+
+    .hero-eyebrow,
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .navbar-logo {
+
+        width: 45px;
+
+        height: 45px;
     }
 
 
